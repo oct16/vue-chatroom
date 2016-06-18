@@ -1,0 +1,249 @@
+body {
+  background: url("http://www.bing.com/az/hprichbg/rb/BlackCanyonOTGunnison_JA-JP9590496533_1920x1080.jpg");
+}
+.room-title {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+.room-title img {
+  width: 40px;
+  vertical-align: middle;
+}
+.chatroom {
+  border: 1px solid #D1D1D1;
+  width: 960px;
+  height: 700px;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Microsoft Sans Serif";
+  background: #fff;
+}
+.chatroom::after {
+  content: '没有选中对话';
+  margin: 0 auto;
+  padding-left: 250px;
+  padding-top: 300px;
+  width: 120px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  color: #c3c3c3;
+}
+.chatroom ul,
+.chatroom ol,
+.chatroom li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chatroom .header {
+  height: 43px;
+  background: gainsboro;
+}
+.chatroom .header .points {
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  margin: 0 0 0 5px;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  cursor: default;
+}
+.chatroom .header .points > li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.chatroom .header .points > li:nth-child(1) {
+  background: #FE5F57;
+}
+.chatroom .header .points > li:nth-child(2) {
+  background: #FFC02F;
+}
+.chatroom .header .points > li:nth-child(3) {
+  background: #2ACA42;
+}
+.chatroom .header .points img {
+  width: 20px;
+}
+.chatroom .slider {
+  width: 250px;
+  height: 100%;
+  background: #E8E8E8;
+  float: left;
+  border-right: #E6E6E6;
+  overflow: auto;
+}
+.chatroom .slider .query {
+  width: 90%;
+  border: 1px solid #D1D1D1;
+  height: 24px;
+  border-radius: 12px;
+  margin: 10px 5%;
+  padding: 10px;
+  outline: none;
+}
+.chatroom .slider .chat-list li {
+  height: 60px;
+  background: #F0F0F0;
+  border-bottom: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  cursor: default;
+}
+.chatroom .slider .chat-list li .point {
+  position: absolute;
+  left: 45px;
+  top: 6px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #E13D36;
+  border-radius: 50%;
+}
+.chatroom .slider .chat-list li .portrait {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  margin-left: 10px;
+  background: #fff;
+}
+.chatroom .slider .chat-list li .info {
+  width: 190px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.chatroom .slider .chat-list li .info p {
+  margin: 0;
+  height: 20px;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+.chatroom .slider .chat-list li .info .name {
+  font-weight: bold;
+  font-size: 14px;
+}
+.chatroom .slider .chat-list li .info .time {
+  margin-right: 10px;
+  color: #b9b9b9;
+  font-size: 12px;
+  line-height: 14px;
+  float: right;
+}
+.chatroom .slider .chat-list li .info .text {
+  color: #555;
+  font-size: 13px;
+}
+.chatroom .slider .chat-list li.on {
+  background: #74859A;
+}
+.chatroom .slider .chat-list li.on .name {
+  color: #fff;
+}
+.chatroom .slider .chat-list li.on .text,
+.chatroom .slider .chat-list li.on .time {
+  color: #e1e1e1;
+}
+.chatroom .slider .chat-list li.on .portrait {
+  border: 1px solid #8f918d;
+}
+.chatroom .main {
+  margin-left: 250px;
+  height: 100%;
+  background: #FFFFFF;
+}
+.chatroom .main .chat-box {
+  height: 500px;
+  border-bottom: 1px solid #D1D1D1;
+  overflow-y: scroll;
+}
+.chatroom .main .chat-box li {
+  padding: 10px;
+}
+.chatroom .main .chat-box li .portrait {
+  width: 36px;
+  height: 36px;
+  float: left;
+}
+.chatroom .main .chat-box li .text {
+  display: inline-block;
+  position: relative;
+  max-width: 350px;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-left: 20px;
+  background: #F9F9F9;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 5px;
+}
+.chatroom .main .chat-box li .text::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #C4C4C4;
+}
+.chatroom .main .chat-box li .text::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #F9F9F9;
+}
+.chatroom .main .chat-box li.self {
+  overflow: auto;
+}
+.chatroom .main .chat-box li.self .portrait {
+  float: right;
+  margin-left: 20px;
+}
+.chatroom .main .chat-box li.self .text {
+  float: right;
+  background: #A5ED5C;
+  border: 1px solid #85e54c;
+}
+.chatroom .main .chat-box li.self .text::before {
+  right: -9px;
+  left: auto;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: none;
+  border-left: 8px solid #C4C4C4;
+}
+.chatroom .main .chat-box li.self .text::after {
+  right: -7px;
+  left: auto;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: none;
+  border-left: 8px solid #A5ED5C;
+}
+.chatroom .main .chat-input {
+  height: 157px;
+  width: 100%;
+}
+.chatroom .main .chat-input textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+}
